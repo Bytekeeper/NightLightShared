@@ -1,6 +1,8 @@
 #ifndef _NL_SHARED_
 #define _NL_SHARED_
 
+#include <sensors.h>
+
 const uint8_t TYPE_SETTINGS = 200;
 
 struct Settings_t {
@@ -11,6 +13,6 @@ struct Settings_t {
   uint16_t fadeInTenthSecs;
   uint16_t fadeOutTenthSecs;
   uint16_t lightTenthSecs;
-};
+} PACKED;
 
 #endif
